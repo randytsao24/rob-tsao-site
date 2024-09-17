@@ -26,26 +26,37 @@ const GameEntryContainer = styled.div`
 
 const ImageContainer = styled.div<{ isEven: boolean }>`
   width: 100%;
-  padding: 20px;
+  padding: 20px 20px 20px 0; // Reduced left padding
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: 768px) {
     width: 40%;
+    padding: 20px; // Restore full padding on desktop
     order: ${props => props.isEven ? 0 : 1};
+    justify-content: ${props => props.isEven ? 'flex-start' : 'flex-end'};
   }
 `;
 
 const GameImage = styled.img`
   width: 100%;
+  max-width: 300px;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+
+  @media (min-width: 768px) {
+    max-width: none;
+  }
 `;
 
 const ContentContainer = styled.div`
-  padding: 20px;
+  padding: 0 20px 20px 20px; // Adjusted padding
 
   @media (min-width: 768px) {
     width: 60%;
+    padding: 20px; // Restore full padding on desktop
   }
 `;
 
