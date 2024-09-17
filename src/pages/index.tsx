@@ -1,6 +1,7 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
 import styled from "styled-components";
+import GlobalStyle from "@styles/globalStyles";
 
 import ProfileSection from "@components/ProfileSection";
 import IntroSection from "@components/IntroSection";
@@ -33,13 +34,16 @@ const ContentWrapper = styled.div`
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <MainContent>
-      <ContentWrapper>
-        <ProfileSection />
-        <IntroSection />
-        <GameShowcase />
-      </ContentWrapper>
-    </MainContent>
+    <>
+      <GlobalStyle />
+      <MainContent>
+        <ContentWrapper>
+          <ProfileSection />
+          <IntroSection />
+          <GameShowcase />
+        </ContentWrapper>
+      </MainContent>
+    </>
   );
 };
 

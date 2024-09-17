@@ -49,6 +49,36 @@ const ContentContainer = styled.div`
   }
 `;
 
+const GameTitle = styled.h3`
+  margin: 0 0 10px;
+  color: #333;
+  font-size: 22px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+`;
+
+const GameText = styled.p`
+  margin: 0 0 5px;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+`;
+
+const GamePosition = styled(GameText)`
+  font-weight: 700;
+`;
+
+const ReleaseDate = styled(GameText)`
+  font-style: italic;
+  margin-bottom: 10px;
+`;
+
+const GameDescription = styled(GameText)`
+  margin: 10px 0 0;
+  color: #666;
+  line-height: 1.5;
+`;
+
 const GameEntry: React.FC<GameEntryProps> = ({ image, name, position, releaseDate, description, index }) => {
   const isEven = index % 2 === 0;
 
@@ -58,10 +88,10 @@ const GameEntry: React.FC<GameEntryProps> = ({ image, name, position, releaseDat
         <GameImage src={image} alt={name} />
       </ImageContainer>
       <ContentContainer>
-        <h3 style={{ margin: '0 0 10px', color: '#333', fontSize: '20px' }}>{name}</h3>
-        <p style={{ margin: '5px 0', color: '#555' }}><strong>Position:</strong> {position}</p>
-        <p style={{ margin: '5px 0', color: '#555' }}><strong>Release Date:</strong> {releaseDate}</p>
-        <p style={{ margin: '10px 0 0', color: '#666' }}>{description}</p>
+        <GameTitle>{name}</GameTitle>
+        <GamePosition>{position}</GamePosition>
+        <ReleaseDate>{releaseDate}</ReleaseDate>
+        <GameDescription>{description}</GameDescription>
       </ContentContainer>
     </GameEntryContainer>
   );

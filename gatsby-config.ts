@@ -33,6 +33,19 @@ const config: GatsbyConfig = {
       '@styles': path.join(__dirname, 'src/styles'),
       '@utils': path.join(__dirname, 'src/utils')
     }
+  }, {
+    resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
+        `Roboto\:300,400,700`,
+        `Montserrat\:400,700`,
+        `Open Sans\:400,600`,
+        // Add your new fonts here, for example:
+        `Lato\:300,400,700`,
+        `Merriweather\:400,700`
+      ],
+      display: 'swap'
+    }
   }]
 };
 

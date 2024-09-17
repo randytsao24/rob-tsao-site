@@ -53,21 +53,25 @@ const ProfileInfo = styled.div`
 
 const ProfileName = styled.h1`
   margin: 0;
-  font-size: 23px;
+  font-size: 28px;
   color: #333;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
 
   @media (min-width: 768px) {
-    font-size: 24px;
+    font-size: 32px;
   }
 `;
 
 const ProfileTitle = styled.p`
   margin: 4px 0 0;
-  font-size: 15px;
+  font-size: 16px;
   color: #666;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 
   @media (min-width: 768px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 

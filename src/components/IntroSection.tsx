@@ -14,7 +14,9 @@ const IntroTitle = styled.h2`
   color: #333;
   text-align: center;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 26px;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
 `;
 
 const ThinDivider = styled.hr`
@@ -29,7 +31,9 @@ const IntroParagraph = styled.p`
   color: #444;
   margin-bottom: 15px;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.6;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
 `;
 
 const StyledLink = styled(Link)`
