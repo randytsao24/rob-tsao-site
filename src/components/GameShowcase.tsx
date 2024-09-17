@@ -47,7 +47,7 @@ const GameShowcase: React.FC = () => {
       name: "IMMORTALS FENYX RISING",
       position: "Narrative Lead / Assoc Producer",
       releaseDate: "Shipped Mar 2021",
-      description: "Key production and narrative owner on a standalone DLC. Delivered full narrative blueprint, all character bios, and  script. Managed pipelines on cinematics, voice recording, and localization while driving project closing."
+      description: "Led a technical team to deliver an ambitious sim-ship on the Nintendo Switch. Drove cross-studio communication, planned timelines, and pushed on optimization initiatives."
     },
     {
       image: skullAndBones,
